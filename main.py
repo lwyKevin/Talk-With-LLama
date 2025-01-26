@@ -1,14 +1,11 @@
 #import langchain dependencies
-
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.embeddings import HuggingFaceEmbeddings
-
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 
 # UI
 import streamlit as st
 
+# Template for llama to answer
 template = """
 Answer the question below precisely.
 
@@ -20,6 +17,7 @@ Answer the question.
 
 """
 
+# get model, prompt, and chain
 model = OllamaLLM(model="llama3")
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
