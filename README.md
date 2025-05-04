@@ -14,7 +14,14 @@ There is an open source AI model with the name Ollama. This project allows users
   - Window: *.\venv* or *.\chatbot\Scripts\activate.bat*
 
 To run the main.py, you will need to
-streamlit run [file_location] [ARGUMENTS]
+streamlit run [file_name] [ARGUMENTS]
+
+For instance: 
+
+streamlit run main.py
+
+streamlit run stream_typing.py
+
 
 ![image](https://github.com/user-attachments/assets/9550a056-f810-4b64-8951-694246429363)
 
